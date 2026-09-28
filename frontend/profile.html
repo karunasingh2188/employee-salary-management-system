@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - Employee Portal</title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Employee Portal
+        </div>
+
+        <div class="nav-links">
+
+            <a href="employee.html">
+                Dashboard
+            </a>
+
+            <a href="profile.html" class="active">
+                My Profile
+            </a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- PROFILE -->
+    <main class="profile-container">
+
+        <div class="profile-header">
+
+            <h1>My Profile</h1>
+
+            <p>
+                View your personal and salary information
+            </p>
+
+        </div>
+
+
+        <!-- PROFILE CARD -->
+        <section class="profile-card">
+
+            <!-- PROFILE TOP -->
+            <div class="profile-top">
+
+                <div class="profile-avatar" id="profileAvatar">
+                    E
+                </div>
+
+                <div class="profile-title">
+
+                    <h2 id="employeeName">
+                        Loading...
+                    </h2>
+
+                    <p id="employeeDepartment">
+                        Loading...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PERSONAL INFORMATION -->
+            <div class="section">
+
+                <h3>
+                    Personal Information
+                </h3>
+
+                <div class="info-grid">
+
+                    <div class="info-box">
+
+                        <span>Name</span>
+
+                        <strong id="name">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>Email</span>
+
+                        <strong id="email">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>City</span>
+
+                        <strong id="city">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>Department</span>
+
+                        <strong id="department">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- JOB INFORMATION -->
+            <div class="section">
+
+                <h3>
+                    Job Information
+                </h3>
+
+                <div class="info-grid">
+
+                    <div class="info-box">
+
+                        <span>Experience</span>
+
+                        <strong id="experience">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>Salary</span>
+
+                        <strong id="salary">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>Employee ID</span>
+
+                        <strong id="employeeId">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>Joining Date</span>
+
+                        <strong id="createdAt">
+                            Loading...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STATUS -->
+            <div class="profile-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    Active Employee
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>

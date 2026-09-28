@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Employee Panel - Salary Management</title>
+
+    <link rel="stylesheet" href="employees.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+
+            <!-- LOGO -->
+
+            <div>
+
+                <h1>
+                    Employee Salary Management
+                </h1>
+
+                <p>
+                    Employee Panel
+                </p>
+
+            </div>
+
+
+            <!-- NAVIGATION + USER -->
+
+            <div class="user-section">
+
+
+                <!-- DASHBOARD -->
+
+                <button
+                    type="button"
+                    id="dashboardBtn"
+                    class="nav-btn"
+                >
+                    Dashboard
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <button
+                    type="button"
+                    id="profileBtn"
+                    class="nav-btn"
+                >
+                    My Profile
+                </button>
+
+
+                <!-- WELCOME -->
+
+                <span id="welcomeUser">
+                    Welcome
+                </span>
+
+
+                <!-- LOGOUT -->
+
+                <button
+                    type="button"
+                    id="logoutBtn"
+                    class="logout-btn"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- ================= PROFILE SUMMARY ================= -->
+
+        <section class="profile-section">
+
+            <h2>
+                My Profile
+            </h2>
+
+
+            <div
+                id="employeeProfile"
+                class="profile-grid"
+            >
+
+                <p>
+                    Loading employee information...
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SALARY ================= -->
+
+        <section class="salary-section">
+
+            <h2>
+                Salary Information
+            </h2>
+
+
+            <div class="salary-card">
+
+                <span>
+                    Monthly Salary
+                </span>
+
+
+                <strong id="employeeSalary">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <section class="actions-section">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+
+            <div class="action-buttons">
+
+
+                <button
+                    type="button"
+                    id="profileBtn2"
+                    class="btn btn-primary"
+                >
+                    View My Profile
+                </button>
+
+
+                <button
+                    type="button"
+                    id="dashboardBtn2"
+                    class="btn btn-secondary"
+                >
+                    Refresh Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="employees.js"></script>
+
+
+</body>
+
+</html>

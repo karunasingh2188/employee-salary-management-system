@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login - Employee Management System</title>
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+
+<body>
+
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+
+            <!-- ==========================================
+                 LOGIN HEADER
+            =========================================== -->
+
+            <div class="auth-header">
+
+                <span class="page-label">
+                    WELCOME BACK
+                </span>
+
+                <h1>
+                    Login to your account
+                </h1>
+
+                <p>
+                    Enter your credentials to continue to your dashboard.
+                </p>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 LOGIN FORM
+            =========================================== -->
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="login-btn"
+                >
+                    Login
+                </button>
+
+
+
+                <!-- LOGIN MESSAGE -->
+
+                <p
+                    id="loginMessage"
+                    class="message"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+
+
+            <!-- ==========================================
+                 REGISTER
+            =========================================== -->
+
+            <div class="auth-footer">
+
+                <p>
+                    Don't have an account?
+
+                    <a href="register.html">
+                        Register
+                    </a>
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

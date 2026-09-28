@@ -1,0 +1,473 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+    background: #172554;
+    color: #ffffff;
+
+    padding: 18px 0;
+
+    margin-bottom: 32px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+}
+
+.header p {
+    color: #bfdbfe;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   USER SECTION
+========================================== */
+
+.user-section {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+#welcomeUser {
+    color: #e2e8f0;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-left: 4px;
+}
+
+
+/* ==========================================
+   NAVIGATION BUTTONS
+========================================== */
+
+.nav-btn {
+    border: 1px solid #3b82f6;
+
+    background: transparent;
+    color: #ffffff;
+
+    padding: 9px 14px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+
+/* ==========================================
+   LOGOUT BUTTON
+========================================== */
+
+.logout-btn {
+    border: none;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    background: #ef4444;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+
+/* ==========================================
+   COMMON SECTION
+========================================== */
+
+.profile-section,
+.salary-section,
+.actions-section {
+    background: #ffffff;
+
+    padding: 26px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.profile-section h2,
+.salary-section h2,
+.actions-section h2 {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+
+    color: #172554;
+}
+
+
+/* ==========================================
+   PROFILE GRID
+========================================== */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* ==========================================
+   PROFILE ITEM
+========================================== */
+
+.profile-item {
+    padding: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.profile-item:hover {
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 3px 10px rgba(37, 99, 235, 0.06);
+}
+
+.profile-item span {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-bottom: 6px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.3px;
+}
+
+.profile-item strong {
+    display: block;
+
+    color: #1e293b;
+
+    font-size: 15px;
+
+    word-break: break-word;
+}
+
+
+/* ==========================================
+   SALARY CARD
+========================================== */
+
+.salary-card {
+    background: #f8fafc;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 10px;
+
+    padding: 24px;
+}
+
+.salary-card span {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 6px;
+
+    text-transform: uppercase;
+}
+
+.salary-card strong {
+    display: block;
+
+    font-size: 30px;
+
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   QUICK ACTIONS
+========================================== */
+
+.action-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+   COMMON ACTION BUTTON
+========================================== */
+
+.btn {
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.1s ease;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+
+/* ==========================================
+   PRIMARY BUTTON
+========================================== */
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==========================================
+   SECONDARY BUTTON
+========================================== */
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 18px 0;
+    }
+
+    .header-content {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .user-section {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .header {
+        margin-bottom: 25px;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .user-section {
+        gap: 8px;
+    }
+
+    .nav-btn,
+    .logout-btn {
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+
+    #welcomeUser {
+        width: 100%;
+
+        margin: 2px 0;
+    }
+
+    .profile-section,
+    .salary-section,
+    .actions-section {
+        padding: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-section h2,
+    .salary-section h2,
+    .actions-section h2 {
+        font-size: 18px;
+    }
+
+    .salary-card strong {
+        font-size: 27px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .header h1 {
+        font-size: 19px;
+    }
+
+    .user-section {
+        align-items: stretch;
+    }
+
+    .nav-btn,
+    .logout-btn {
+        width: 100%;
+    }
+
+    .salary-card {
+        padding: 20px;
+    }
+
+}
