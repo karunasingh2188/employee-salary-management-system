@@ -2,8 +2,7 @@
 // API URL
 // ==========================================
 
-const API_URL = "http://localhost:5000/api/employees";
-
+const API_URL = "https://employee-salary-management-system-ghgy.onrender.com/api/employees";
 
 // ==========================================
 // AUTH TOKEN
