@@ -31,7 +31,6 @@ A web-based application for managing employee records, salaries, and employee-re
 
 ## Project Structure
 
-
 employee-salary-management-system/
 ├── backend/
 └── frontend/
